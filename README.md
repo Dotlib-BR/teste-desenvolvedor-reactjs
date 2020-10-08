@@ -1,56 +1,49 @@
-[![](http://www.dotlib.com.br/site/images/footer/bra.png)](http://www.dotlib.com)
+[![](https://dotlib.com/theme/img/logos/logo.png)](http://www.dotlib.com)
 
-# Teste para candidatos à vaga de Desenvolvedor ReactJS (JR).
+# Nossa empresa
 
-Olá caro desenvolvedor, nesse teste analisaremos seu conhecimento geral e inclusive velocidade de desenvolvimento. Abaixo explicaremos tudo o que será necessário.
+A Dot.Lib distribui conteúdo online científico e acadêmico a centenas de instituições espalhadas pela América Latina. Temos como parceiras algumas das principais editoras científicas nacionais e internacionais. Além de prover conteúdo, criamos soluções que atendem às necessidades de nossos clientes e editoras.
 
-## Instruções
+# Descrição da vaga
 
-A partir do layout e imagens disponibilizados, você deve implementar uma página web com o mesmo conteúdo e que seja responsivo.
+Buscamos um profissional que seja apaixonado por desenvolvimento, inovação e novas tecnologias, para integrar nosso time em projetos baseados em NodeJS, PHP, React.JS e React Native.
 
-A página deverá ser construída utilizando a tecnologia ReactJS.
+## Diferenciais
 
-O conteúdo deverá ser lido por meio de uma api também disponibilizada.
+- Equipe unida, divertida e apaixonada por hambúrgueres.
+- Cafeteira sempre cheia :P
+- TECH DAY - Evento trimestral de palestras sobre tecnologia
+- Friday's Talk - Bate papo discontraído sobre tecnologia, apresentação de POCs de estudos, etc
+- Última sexta feira do mês tem happy hour!!!!
+- Home office
+- O gerente às vezes paga o almoço
+- Emendas em feriados nacionais
 
-## Tecnologias a serem utilizadas
+## Requisitos
 
-Devem ser utilizadas as seguintes tecnologias:
+### **Obrigatórios:**
 
-- HTML
-- CSS
-- Javascript
-- ReactJS
+- Mínimo 1 ano de experiência em desenvolvimento de sites e sistemas em ReactJS
+- Redux e Hooks
+- Consumo de APIs RESTful
+- SASS e Flexbox
+- Conhecimentos em Docker
+- Controle de versões (GIT)
+- Conhecimentos em Linux
 
-## API
+### **Diferenciais:**
 
-Todo conteúdo da página (exceto o rodapé), está disponível em uma API para ser consumida.
+- Conhecimentos em Typescript
+- Conhecimentos em Node.JS
+- Consumo de APIs em GraphQL
+- Conhecimentos em serviços AWS
+- Experiência em Scrum como metodologia ágil
 
-Utilize os seguintes endpoint's para carregar as informações.
+## Contratação
 
-```
-http://localhost:3000/menu
-```
+Regime: PJ
 
-```
-http://localhost:3000/categories
-```
+## Como se candidatar
 
-```
-http://localhost:3000/books
-```
-
-## Preparação
-
-Abra duas telas do terminal, e em uma delas digite:
-
-```sh
-$ npm start
-```
-
-Na segunda tela do terminal, digite:
-
-```sh
-$ json-server api/dotlib.json
-```
-
-### Boa sorte!
+Para se candidatar, basta acessar a url e realizar o teste para a vaga:
+[https://github.com/dotlib/teste-desenvolvedor-reactjs](teste.md)
