@@ -6,7 +6,7 @@ import { FaSearch } from 'react-icons/fa'
 import './styles.css';
 
 //Assets
-import logo from '../../assets/ images/logo_dotlib.png'
+import logo from '../../assets/images/logo_dotlib.png'
 
 const Header: React.FC = () => {
     return (
