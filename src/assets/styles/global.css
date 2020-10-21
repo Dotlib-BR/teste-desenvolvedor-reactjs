@@ -1,0 +1,41 @@
+:root {
+    font-size: 60%;
+    font-family: 'Ubuntu', sans-serif;
+
+    --color-background: #F9F9F9;
+    --color-footer-background: #ececec;
+
+    --color-border: #b8b8b8;
+
+    --text-in-white: #383838;
+
+    --color-dotLib: #9cbc4d
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100vh;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--text-in-white)
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none
+}
+
+h1, h2, h3, a, span {
+    color: var(--text-in-white);
+    font-family: 'Ubuntu', sans-serif;
+}
