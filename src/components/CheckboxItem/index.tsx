@@ -10,10 +10,10 @@ interface CheckboxItemProps {
 
 const CheckboxItem: React.FC<CheckboxItemProps> = ({id, title}) => {
   return (
-    <>
+    <div id='checkbox-container'>
         <input type="checkbox" id={`${id}`} onClick={() => console.log('cliquei')} />
         <label htmlFor={`${id}`}>{title}</label>
-    </>
+    </div>
   );
 }
 

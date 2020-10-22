@@ -1,6 +1,6 @@
 #header-component {
     width: 100%;
-    padding: 15px 15%;
+    padding: 15px 20% 15px 20%;
 
     box-shadow: 0px 1px 20px -10px rgba(0, 0, 0, 0.66); 
 
@@ -27,6 +27,7 @@
 }
 
 .search-input input {
+    padding: 0 10px;
     height: 35px;
     width: 200px;
 
@@ -35,6 +36,7 @@
     outline: var(--color-border);
 
     box-shadow: inset 0px -2px rgba(128,128,128,0.66);
+    background-color: transparent;
 }
 
 .search-input button {
@@ -53,3 +55,8 @@
     cursor: pointer;
 }
 
+@media (min-width:1470px) {
+    #header-component {
+        padding: 15px 15% 15px 15%;
+    }
+}
