@@ -58,11 +58,9 @@ const Home: React.FC = () => {
                         <hr/>
                     </div>
 
-                </div>
-                <Footer/>
+                </div>     
             </main>
-
-            
+            <Footer/>          
 
         </div>
     );

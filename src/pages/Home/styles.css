@@ -1,3 +1,10 @@
+#page-home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 #page-home main {
     display: flex;
     padding: 30px 15% 15px 15%;
