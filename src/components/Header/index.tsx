@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa'
 
@@ -7,20 +7,35 @@ import './styles.css';
 
 //Assets
 import logo from '../../assets/images/logo_dotlib.png'
+import api from '../../services/api';
+
+interface menuItensProps {
+    title: string
+    id: number
+
+}
 
 const Header: React.FC = () => {
+    const [menuItens, setMenuItems] = useState<menuItensProps[]>([]);
+
+    useEffect(() => {
+        api.get('/menu').then(response => {
+            setMenuItems(response.data);
+        })
+    }, [])
+
+
     return (
         <nav id="header-component">
             <li><Link to="/"><img src={logo} alt='dot.lib' /></Link></li>
             <ul>
-                <li><Link to="/">HOME</Link></li>
-                <li><Link to="/">PESQUISA AVANÇADA</Link></li>
-                <li><Link to="/">BASES</Link></li>
-                <li><Link to="/">LOGIN</Link></li>
+                {menuItens.map(menuItem => (
+                    <li key={menuItem.id}><Link to="/">{menuItem.title}</Link></li>
+                ))}
             </ul>
             <form className="search-input">
                 <input type="text" />
-                <button type="submit"><FaSearch color='white' size='13'/></button>
+                <button type="submit"><FaSearch color='white' size='13' /></button>
             </form>
 
         </nav>
