@@ -47,20 +47,22 @@ const Home: React.FC = () => {
                         {books.map(book => (
                             <div className="book-item" key={book.id}>
                                 <img src={book.image} alt={book.title} />
-                                <CheckboxItem id={`${book.id}`} title={`${book.id}.`}/>
-                                
-                                <h3>{book.title}</h3>
+                                <CheckboxItem id={`${book.id}`} title={`${book.id}.`} />
 
-                                <h4><strong>{book.editor}</strong><br/>{book.year}</h4>
+                                <div className="title">
+                                    <h3>{book.title}</h3>
+                                </div>
+
+                                <h4><strong>{book.editor}</strong><br />{book.year}</h4>
                             </div>
                         ))}
 
-                        <hr/>
+                        <hr />
                     </div>
 
-                </div>     
+                </div>
             </main>
-            <Footer/>          
+            <Footer />
 
         </div>
     );

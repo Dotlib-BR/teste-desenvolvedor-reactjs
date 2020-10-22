@@ -24,18 +24,16 @@
     flex: 3
 }
 
-#page-home .content p{
+#page-home .content p {
     font-size: 13px
 }
 
 #page-home .lib-content {
     position: relative;
     align-items: baseline;
-
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-row-gap: 100px;
-
     margin-top: 50px;
 }
 
@@ -43,7 +41,7 @@
     text-align: center;
 }
 
-#page-home .book-item img{
+#page-home .book-item img {
     border: 0.5px solid var(--color-border);
     padding: 3px;
     margin-bottom: 5px;
@@ -51,13 +49,9 @@
 
 #page-home .book-item h3 {
     font-weight: 400;
-
     width: 140px;
-
     line-height: 15px;
     margin-top: 5px;
-    margin-left: 30px;
-
     text-align: center;
 }
 
@@ -65,7 +59,6 @@
     color: var(--text-gray);
     font-weight: 400;
     font-size: 11px;
-
     margin-top: 5px;
 }
 
@@ -73,10 +66,13 @@
     position: absolute;
     top: 310px;
     left: 50%;
-
     transform: translateX(-50%);
-
     width: 92%;
-
     border: 1px solid var(--color-hr);
+}
+
+.lib-content .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
