@@ -59,9 +59,10 @@ const Home: React.FC = () => {
                     </div>
 
                 </div>
+                <Footer/>
             </main>
 
-            <Footer/>
+            
 
         </div>
     );
