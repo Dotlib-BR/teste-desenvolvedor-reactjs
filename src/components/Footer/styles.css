@@ -1,0 +1,17 @@
+#footer-component {
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    padding: 15px 15% 10px 15%;
+
+    background: var(--color-footer-background);
+    border-top: 0.5px solid  rgba(0, 0, 0, 0.11);
+}
+
+#footer-component img{
+    transform: translateY(-40%)
+}
