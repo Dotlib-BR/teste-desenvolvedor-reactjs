@@ -1,0 +1,33 @@
+input[type=checkbox]+label {
+    display: block;
+    margin: 0em;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]+label:before {
+    content: "\2714";
+    border: 0.13em solid var(--color-border);
+
+    display: inline-block;
+ 
+    width: 10px;
+    height: 11.5px;
+    padding: 1px;
+    margin-right: 0.5em;
+    vertical-align: center;
+    color: transparent;
+    transition: .3s;
+
+    background-color: var(--color-checkbox-background);
+    border-radius: 2px;
+}
+
+input[type=checkbox]:checked+label:before {
+    background-color:var(--color-dotLib);
+    border-color: var(--color-border);
+    color: #FFF;
+}
