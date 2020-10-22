@@ -9,8 +9,11 @@
     --color-border: #b8b8b8;
 
     --text-in-white: #383838;
+    --text-gray: #707070;
 
-    --color-dotLib: #9cbc4d
+    --color-hr: rgb(235, 235, 235);
+
+    --color-dotLib: #9cbc4d;
 }
 
 * {
