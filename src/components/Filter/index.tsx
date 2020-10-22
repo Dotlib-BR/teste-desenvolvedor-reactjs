@@ -5,6 +5,7 @@ import './styles.css';
 
 //API
 import api from '../../services/api';
+import CheckboxItem from '../CheckboxItem';
 
 interface CategoriesProps {
     title: string
@@ -24,10 +25,8 @@ const Filter: React.FC = () => {
         <form action="">
             {categories.map(categorie => (
                 <div className="checkbox-item" key={categorie.id}>
-                    <input type="checkbox" id={`${categorie.id}`} onClick={() => console.log('cliquei')} />
-                    <label htmlFor={`${categorie.id}`}>{categorie.title}</label>
+                    <CheckboxItem id={`${categorie.id}`} title={categorie.title}/>
                 </div>
-
             ))}
 
         </form>
