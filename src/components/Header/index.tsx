@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa'
 import { FiMenu } from 'react-icons/fi'
+import { AiOutlineClose } from 'react-icons/ai'
+
 
 
 //Styles
@@ -21,7 +23,9 @@ interface menuItensProps {
 const Header: React.FC = () => {
     const [menuItens, setMenuItems] = useState<menuItensProps[]>([]);
     const [inputValue, setInputValue] = useState('');
+    const [sidebar, setSidebar] = useState(false);
 
+    const showSideBar = () => setSidebar(!sidebar);
 
     useEffect(() => {
         api.get('/menu').then(response => {
@@ -33,12 +37,13 @@ const Header: React.FC = () => {
     return (
         <nav id="header-component">
             <li><Link to="/"><img src={logo} alt='dot.lib' /></Link></li>
-            <ul>
-
+            
+            <ul className='menu-component'>
                 {menuItens.map(menuItem => (
                     <li key={menuItem.id}><Link to="/">{menuItem.title}</Link></li>
                 ))}
             </ul>
+
             <form className="search-input">
                 <input
                     type="text"
@@ -49,9 +54,24 @@ const Header: React.FC = () => {
                 <button type="submit"><FaSearch color='white' size='13' /></button>
             </form>
 
-            <button className="menu-button">
-                <FiMenu size='35' />
+            <button className="menu-button" onClick={showSideBar}>
+                <FiMenu size='35' color='#242424'/>
             </button>
+
+            <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+                <ul className='nav-menu-items' onClick={showSideBar}>
+                    <li className='navbar-toggle'>
+                        <Link to='#' className='menu-bars'>
+                            <AiOutlineClose color='#FFF' size={20}/>
+                        </Link>
+                    </li>
+                    {menuItens.map(menuItem => {
+                        return (
+                            <li key={menuItem.id}><Link to="/" className='nav-title'>{menuItem.title}</Link></li>
+                        );
+                    })}
+                </ul>
+            </nav>
 
 
         </nav>
