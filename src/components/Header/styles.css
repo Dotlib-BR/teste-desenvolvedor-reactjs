@@ -1,9 +1,7 @@
 #header-component {
     width: 100%;
-    padding: 15px 20% 15px 20%;
-
-    box-shadow: 0px 1px 20px -10px rgba(0, 0, 0, 0.66); 
-
+    padding: 15px 5% 15px 5%;
+    box-shadow: 0px 1px 20px -10px rgba(0, 0, 0, 0.66);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -15,11 +13,10 @@
     justify-content: space-between;
 }
 
-#header-component a{
+#header-component a {
     font-size: 17px;
     font-weight: 400;
-
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .search-input {
@@ -30,33 +27,65 @@
     padding: 0 10px;
     height: 35px;
     width: 200px;
-
     border: 0.5px solid var(--color-border);
-
     outline: var(--color-border);
-
-    box-shadow: inset 0px -2px rgba(128,128,128,0.66);
+    box-shadow: inset 0px -2px rgba(128, 128, 128, 0.66);
     background-color: transparent;
 }
 
 .search-input button {
     height: 35px;
     width: 40px;
-
-    box-shadow: inset 0px -2px rgba(128,128,128,0.66);
+    box-shadow: inset 0px -2px rgba(128, 128, 128, 0.66);
     border: 0.5px solid var(--color-border);
     background-color: var(--color-dotLib);
     outline: var(--color-border);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     cursor: pointer;
+}
+
+#header-component .menu-button{
+    display: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+@media (max-width:780px) {
+    #header-component ul {
+        display: none
+    }
+    #header-component .menu-button {
+        display: block;
+        background: none;
+        border: none;
+    }
+}
+
+@media (max-width:940px) {
+    #header-component a {
+        font-size: 15px;
+        font-weight: 400;
+        margin-right: 10px;
+    }
+}
+
+@media (min-width:1120px) {
+    #header-component {
+        padding: 15px 10% 10px 10%;
+    }
+}
+
+@media (min-width:1270px) {
+    #header-component {
+        padding: 15px 15% 10px 15%;
+    }
 }
 
 @media (min-width:1470px) {
     #header-component {
-        padding: 15px 15% 15px 15%;
+        padding: 15px 20% 15px 20%;
     }
 }

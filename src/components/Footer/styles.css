@@ -3,7 +3,7 @@
     justify-content: space-between;
 
     width: 100%;
-    padding: 15px 15% 10px 15%;
+    padding: 15px 5% 10px 5%;
 
     background: var(--color-footer-background);
     border-top: 0.5px solid  rgba(0, 0, 0, 0.11);
@@ -12,3 +12,22 @@
 #footer-component img{
     transform: translateY(-40%)
 }
+
+@media (min-width:1120px) {
+    #footer-component {
+        padding: 15px 5% 10px 5%;
+    }
+}
+
+@media (min-width:1270px) {
+    #footer-component {
+        padding: 15px 10% 10px 10%;
+    }
+}
+
+@media (min-width:1470px) {
+    #footer-component {
+        padding: 15px 20% 10px 20%;
+    }
+}
+

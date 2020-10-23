@@ -7,7 +7,7 @@
 
 #page-home main {
     display: flex;
-    padding: 30px 15% 15px 15%;
+    padding: 30px 5% 15px 5%;
 }
 
 #page-home .filter {
@@ -21,11 +21,11 @@
 }
 
 #page-home .content {
-    flex: 3
+    flex: 3;
 }
 
 #page-home .content p {
-    font-size: 13px
+    font-size: 13px;
 }
 
 #page-home .lib-content {
@@ -33,7 +33,7 @@
     align-items: baseline;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-row-gap: 100px;
+    grid-row-gap: 80px;
     margin-top: 50px;
 }
 
@@ -62,17 +62,98 @@
     margin-top: 5px;
 }
 
-.lib-content hr {
+.section-hr{
     position: absolute;
-    top: 310px;
+    top: 300px;
     left: 50%;
     transform: translateX(-50%);
     width: 92%;
     border: 1px solid var(--color-hr);
 }
 
+.responsive-hr {
+    width: 200%;
+    border: 1px solid var(--color-hr);
+    display: none;
+
+    position: absolute;
+    top: 280px;
+}
+
+.responsive-hr.dif {
+    width: 100%;
+    top: 280px;
+}
+
+.responsive-div {
+    position: relative;
+}
+
+hr.transparent {
+    display: none;
+}
+
 .lib-content .title {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width:630px) {
+
+    .responsive-hr {
+        display: none!important;
+    }
+
+    .responsive-hr.dif {
+        display: block!important;
+    }
+}
+
+@media (max-width:940px) {
+    #page-home .content {
+        flex: 2;
+    }
+    
+    #page-home .lib-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .responsive-hr {
+        display: block;
+    }
+
+    .section-hr{
+        display: none;
+    }
+}
+
+@media (max-width:630px) {
+    #page-home .lib-content {
+        grid-template-columns: repeat(1, 1fr)!important;
+    }
+}
+
+@media (max-width:780px) {
+    #page-home .lib-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1120px) {
+    #page-home main {
+        padding: 15px 10% 10px 10%;
+    }
+}
+
+@media (min-width:1270px) {
+    #page-home main {
+        padding: 15px 15% 10px 15%;
+    }
+}
+
+@media (min-width:1470px) {
+    #page-home main {
+        padding: 15px 20% 15px 20%;
+    }
 }

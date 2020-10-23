@@ -19,14 +19,20 @@ interface BooksProps {
 }
 
 const Home: React.FC = () => {
-
     const [books, setBooks] = useState<BooksProps[]>([]);
+    const  [widthDimension, setWidthDimension] = useState<any>();
 
     useEffect(() => {
         api.get('/books').then(response => {
             setBooks(response.data);
         })
     }, [])
+
+    useEffect(() =>{
+        window.addEventListener('resize', () => {
+            setWidthDimension(window.innerWidth)
+        })
+    }, [widthDimension])
 
     return (
         <div id="page-home">
@@ -45,19 +51,24 @@ const Home: React.FC = () => {
 
                     <div className="lib-content">
                         {books.map(book => (
-                            <div className="book-item" key={book.id}>
-                                <img src={book.image} alt={book.title} />
-                                <CheckboxItem id={`${book.id}`} title={`${book.id}.`} />
+                            <div className='responsive-div' key={book.id}>
+                                <div className="book-item">
+                                    <img src={book.image} alt={book.title} />
+                                    <CheckboxItem id={`${book.id}`} title={`${book.id}.`} />
 
-                                <div className="title">
-                                    <h3>{book.title}</h3>
+                                    <div className="title">
+                                        <h3>{book.title}</h3>
+                                    </div>
+
+                                    <h4><strong>{book.editor}</strong><br />{book.year}</h4>
                                 </div>
+                                <hr className={book.id % 2 === 0 ? 'transparent' : 'responsive-hr'}/>
+                                <hr className={widthDimension > 630 ? 'transparent' : 'responsive-hr dif'}/>                              
 
-                                <h4><strong>{book.editor}</strong><br />{book.year}</h4>
                             </div>
                         ))}
 
-                        <hr />
+                        <hr className='section-hr'/>
                     </div>
 
                 </div>

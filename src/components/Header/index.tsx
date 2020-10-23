@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa'
+import { FiMenu } from 'react-icons/fi'
+
 
 //Styles
 import './styles.css';
@@ -46,6 +48,11 @@ const Header: React.FC = () => {
                 />
                 <button type="submit"><FaSearch color='white' size='13' /></button>
             </form>
+
+            <button className="menu-button">
+                <FiMenu size='35' />
+            </button>
+
 
         </nav>
     );
