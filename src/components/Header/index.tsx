@@ -51,8 +51,6 @@ const Header: React.FC = () => {
     function handleInputChange(e: React.ChangeEvent<HTMLInputElement>) {
         setInputValue(e.target.value);
 
-        // const booksDiv = document.querySelectorAll('responsive-div')
-
         books.forEach((book) => {
             const bookDiv = document.getElementById(`${book.id}`)
             const hr = document.getElementById('section-hr')
