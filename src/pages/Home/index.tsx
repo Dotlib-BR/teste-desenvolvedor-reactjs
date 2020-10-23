@@ -51,7 +51,7 @@ const Home: React.FC = () => {
 
                     <div className="lib-content">
                         {books.map(book => (
-                            <div className='responsive-div' key={book.id}>
+                            <div className='responsive-div' id={`${book.id}`} key={book.id}>
                                 <div className="book-item">
                                     <img src={book.image} alt={book.title} />
                                     <CheckboxItem id={`${book.id}`} title={`${book.id}.`} />
@@ -64,11 +64,10 @@ const Home: React.FC = () => {
                                 </div>
                                 <hr className={book.id % 2 === 0 ? 'transparent' : 'responsive-hr'}/>
                                 <hr className={widthDimension > 630 ? 'transparent' : 'responsive-hr dif'}/>                              
-
                             </div>
                         ))}
 
-                        <hr className='section-hr'/>
+                        <hr className='section-hr' id='section-hr'/>
                     </div>
 
                 </div>

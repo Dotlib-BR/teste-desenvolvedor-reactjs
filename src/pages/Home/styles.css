@@ -8,6 +8,7 @@
 #page-home main {
     display: flex;
     padding: 30px 5% 15px 5%;
+    flex: 1;
 }
 
 #page-home .filter {
@@ -89,6 +90,10 @@
     position: relative;
 }
 
+.responsive-div.transparent{
+    display: none;
+}
+
 hr.transparent {
     display: none;
 }
@@ -97,6 +102,10 @@ hr.transparent {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.section-hr.transparent {
+    display: none;
 }
 
 @media (max-width:630px) {
