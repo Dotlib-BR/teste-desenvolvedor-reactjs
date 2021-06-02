@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { FaSearch } from 'react-icons/fa';
 import api from '../../utils/api'
 
 import * as S from './styles'
@@ -6,9 +7,11 @@ import * as S from './styles'
 import logoImg from '../../ images/logo_dotlib.png'
 
 export function Header() {
-    const [menuItem, setMenuItem] = useState("");
+    const [menuItem, setMenuItem] = useState([]);
 
+    console.log(typeof menuItem);
     useEffect(() => {
+
         api.get('/menu').then((response) => {
 
             setMenuItem(response.data)
@@ -28,6 +31,13 @@ export function Header() {
                         ))}
                     </ul>
                 </S.Nav>
+
+                <S.Input>
+                    <div>
+                        <FaSearch />
+                    </div>
+                    <input type="text" />
+                </S.Input>
             </S.Container>
         </S.Header>
     )
