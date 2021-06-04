@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Header = styled.header`
   width: 100%;
   box-shadow: 0px 3px 15px -2px rgba(0, 0, 0, 0.6);
+  background: #fff;
 `;
 
 export const Container = styled.div`
