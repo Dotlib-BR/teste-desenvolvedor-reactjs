@@ -2,6 +2,21 @@ ul {
     list-style: none;
 }
 
-ul li a {
-    
+img.books {
+    width: 250px;
+    height: 300px;
+}
+
+@media(min-width: 768px) {
+    img.books {
+        width: 140px;
+        height: 200px;
+    }
+
+    .landing {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-bottom: 3px solid #efefef;
+    }
 }

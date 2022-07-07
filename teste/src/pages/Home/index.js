@@ -5,6 +5,7 @@ import './style.css'
 function Home() {
   const [categories, setCategories] = useState([])
   const [books, setBooks] = useState([])
+  const [booksEnd, setBooksEnd] = useState([])
 
   useEffect(() => {
 
@@ -13,14 +14,31 @@ function Home() {
         const res = await api.get('categories')
         setCategories(res.data)
 
-        await api.get('books')
-         .then(res => {
-             setBooks(res.data)
+        await api.get('books', {
+            headers: {
+                "Content-Type": "application/json"
+            },
+            responseType: 'json'
+        })
+         .then(res => res.data)
+         .then(data => {
+            setBooks(data.slice(0,5))
 
          })
-         .catch(err => console.log(err))
-        
+         .catch(err => console.log(err.status))
 
+         await api.get('books', {
+            headers: {
+                "Content-Type": "application/json"
+            },
+            responseType: 'json'
+        })
+         .then(res => res.data)
+         .then(data => {
+            setBooksEnd(data.slice(5,10))
+
+         })
+         .catch(err => console.log(err.status))
     }
     loadApi()
 
@@ -42,22 +60,48 @@ function Home() {
                     })}
                 </ul>
             </div>
-             <div className="col-sm-12 col-md-8">
-                <h2>Livros</h2>
-                <ul>
-                    {books.map(book => {
-                        return(
-                            <li key={book.id}>
-                                <img src={`${book.image}`} alt={book.title} />
-                                <p>{book.title}</p>
-                                <p>{book.editor}</p>
-                                <p>{book.year}</p>
-                            </li>
-                        )
-                    })}
-                </ul>
+             <div className="col-sm-12 col-md-8 media">
+                    <h2>Livros</h2>
+                    <div className='container'>
+                        <div className='row'>
+                            <div className='col-md-12 landing'>
+                                {books.map(book => {
+                                    return(
+                                        <div className='mt-2 text-center' key={book.id}>                               
+                                            <img className='img-fluid books d-block mx-auto mb-2' src={book.image} alt={book.title} />
+                                            <input type='checkbox'/>
+                                            <p><span>{book.id}</span></p>
+                                            <p>
+                                                {book.title.substr(0, 11)}<br />
+                                                {book.title.substr(12, 18)}<br />
+                                            </p>
+                                            <p>{book.editor}</p>
+                                            <p>{book.year}</p>   
+                                        </div>
+                                    )
+                                })} 
+                            </div>
+                            <div className='col-md-12 landing mt-2'>
+                            {booksEnd.map(book => {
+                                    return(
+                                        <div className='mt-2 text-center' key={book.id}>                               
+                                            <img className='img-fluid books d-block mx-auto mb-2' src={book.image} alt={book.title} />
+                                            <input type='checkbox'/>
+                                            <p><span>{book.id}</span></p>
+                                            <p>
+                                                {book.title.substr(0, 11)}<br />
+                                                {book.title.substr(12, 18)}<br />
+                                            </p>
+                                            <p>{book.editor}</p>
+                                            <p>{book.year}</p>   
+                                        </div>
+                                    )
+                                })} 
+                            </div>
+                        </div>
+                    </div>    
+                </div>
             </div>
-        </div>
     </section>
   );
 }
