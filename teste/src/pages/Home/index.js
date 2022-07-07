@@ -64,7 +64,7 @@ function Home() {
                     <h2>Livros</h2>
                     <div className='container'>
                         <div className='row'>
-                            <div className='col-md-12 landing'>
+                            <div className='col-md-12 landing landing-border'>
                                 {books.map(book => {
                                     return(
                                         <div className='mt-2 text-center' key={book.id}>                               

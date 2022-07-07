@@ -1,3 +1,7 @@
+:root {
+    --border-color: #efefef;
+}
+
 ul {
     list-style: none;
 }
@@ -17,6 +21,9 @@ img.books {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        border-bottom: 3px solid #efefef;
+    }
+
+    .landing-border {
+        border-bottom: 3px solid var(--border-color);
     }
 }

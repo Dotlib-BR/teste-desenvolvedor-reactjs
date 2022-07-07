@@ -1,5 +1,18 @@
+:root {
+    --border-color: #efefef;
+}
+
 .navbar-color {
     background-color: #fff!important;
     z-index: 1;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
+
+.form-control {
+    border-bottom: 3px solid var(--border-color);
+}
+
+.btn-success {
+    border-bottom: 3px solid var(--border-color);
+}
+

@@ -1,7 +1,8 @@
 import logo from '../../assets/images/logo_dotlib.png'
 import { useState, useEffect } from 'react';
-import api from '../../services/api';
+import { FaSistrix } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
+import api from '../../services/api';
 import './style.css'
 
 function Header() {
@@ -46,9 +47,9 @@ function Header() {
                     <Link className="nav-link" to="#">{login}</Link>
                 </li>
             </ul>
-            <form className="d-flex">
-                <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-success" type="submit">+</button>
+            <form className="d-flex border-control">
+                <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
+                <button onClick={e => e.preventDefault()} className="btn btn-success" type="submit"><FaSistrix/></button>
             </form>
             </div>
         </div>
