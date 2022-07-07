@@ -1,0 +1,29 @@
+:root {
+    --border-color: #efefef;
+}
+
+ul {
+    list-style: none;
+}
+
+img.books {
+    width: 250px;
+    height: 300px;
+}
+
+@media(min-width: 768px) {
+    img.books {
+        width: 140px;
+        height: 200px;
+    }
+
+    .landing {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .landing-border {
+        border-bottom: 3px solid var(--border-color);
+    }
+}
