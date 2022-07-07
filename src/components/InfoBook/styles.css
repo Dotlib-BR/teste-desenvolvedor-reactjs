@@ -1,0 +1,46 @@
+.book_container{
+  display: grid;
+  grid-template-columns: repeat(5, 3fr) ; 
+  margin: 15px;
+}
+
+.book_img{
+  width: 100px;
+  height: 150px;
+  margin: 10px 20px;
+
+}
+
+.info h4{
+  font-size: 10px;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+}
+.check {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.check input {
+  margin-right: 5px;
+}
+.info_title {
+  display: flex;
+  justify-content: center;
+}
+.info_ano {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  color: gray;
+}
+.info_edit {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  color: gray;
+}

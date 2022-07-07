@@ -1,0 +1,24 @@
+.sibebar_container{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.sibebar_container h1 {
+  color: #242323;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.check_b{
+  padding-left: 20px;
+  margin-bottom: 10px; 
+}
+ 
+.check_b input{
+  margin-right: 10px;
+}
+
+.check_b input:checked{
+  background-color: rgb(6, 6, 12);
+}

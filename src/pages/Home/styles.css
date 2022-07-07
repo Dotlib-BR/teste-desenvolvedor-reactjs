@@ -1,0 +1,22 @@
+.C_container{
+  margin: auto;
+  display: flex;
+}
+.infor{
+  display: flex;
+  margin-left: 15%;
+  flex-direction: column;
+  width: auto;
+}
+
+.gridarea{
+  width: auto;
+  display: grid;
+  flex: 1;
+  justify-content:center;
+}
+.gridarea h3{
+  padding: 10px;
+  font-size: 9px;
+  
+}

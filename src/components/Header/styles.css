@@ -1,0 +1,72 @@
+
+
+.heade{
+  width: auto;
+  border-bottom: 2px solid #cccecc;
+  background: #fff;
+  margin-left: 15px;
+}
+.container{
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  
+}
+
+.nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  max-width: 700px;
+}
+.nav li{
+  padding: 20px 15px;
+}
+.nav a {
+  color: #616361;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+  border-radius: 8px;
+  transition: 0.3s ease;    
+}
+
+.nav a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.Input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.pesquisa{
+  width: 40px;
+    height: 30px;
+    background-color: #6fbf42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 0.3s;
+    cursor: pointer;
+}
+.Input input {
+  outline: 0;
+  height: 30px;
+  width: 100%;
+  border: 1px solid #c1c1c1;
+  padding-left: 10px;
+  border-bottom:3px solid rgb(207, 205, 205);
+}
+
+@media (max-width: 1024px) {
+  .heade {
+    max-width: 1300px;
+    
+  }
+} 
