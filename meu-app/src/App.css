@@ -1,0 +1,188 @@
+.App {
+  text-align: center;
+}
+
+header{
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 3px rgba(0,0,0,.2);
+  align-items: center;
+  justify-content: center;
+}
+header div.content{
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+header .menu ul{
+  display: flex;
+}
+header .menu ul li{
+  list-style: none;
+  padding-left: 25px;
+}
+header .menu ul li a{
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+div.content{
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: center;
+}
+.book-list ul{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.book-list ul li{
+  max-width: 220px;
+  padding-right: 7px;
+  text-align: left;
+}
+.book-list ul li img{
+  max-width: 165px;
+}
+.book-list ul li h3{
+  font-size: 12px;
+  padding-right: 15px;
+}
+.book-list p{
+  text-align: left;
+}
+div.content main{
+  width: 100%;
+  display: block;
+}
+#btnBusca{
+  background-color: #9ebc4c;
+  border-bottom: 4px solid #82a233;
+  max-width: 22px;
+  padding: 4px;
+  top: 15px;
+  position: relative;
+}
+#txtBusca{
+  height: 28px;
+  border:1px solid #c6c6c6;
+  border-bottom: 4px solid #c6c6c6;
+}
+div.content .sidebar{
+  min-width: 250px;
+}
+div.content .sidebar h2{
+  text-align: left;
+}
+div.content .sidebar ul{
+  padding: 0;
+}
+div.content .sidebar ul li,
+.book-list ul li{
+  list-style: none;
+}
+div.content .sidebar ul li{
+  display: flex;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+footer{
+  background-color: #ececec;
+  border-top: 1px solid #d8d8d8;
+  min-height: 70px;
+  display: flex;
+}
+footer #logoFooter{
+  width: 90px;
+  margin-left: 25px;
+  filter: grayscale(100%);
+  opacity: 0.3;
+}
+footer .content{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  div.content{
+    flex-direction: column;
+    padding: 5px 12px;
+  }
+  header div.content {
+    flex-direction: column;
+  }
+  header .menu ul {
+    margin-top: 10px; 
+  }
+  .book-list ul li {
+    max-width: 100%; 
+    padding: 0 10px; 
+    margin-bottom: 20px; 
+  }
+  .book-list ul li img {
+    max-width: 100%; 
+    height: auto; 
+  }
+  #btnBusca {
+    max-width: 19px;
+    padding: 6px;
+  }
+  footer {
+    flex-direction: column; 
+  }
+  footer #logoFooter {
+    margin: 10px auto; 
+  }
+  footer .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
