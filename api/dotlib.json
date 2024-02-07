@@ -5,75 +5,85 @@
       "title": "FUNDAMENTOS DE DERMATOSCOPIA",
       "editor": "Atheneu",
       "year": "2017",
-      "image": "http://lectio.com.br/upload/1/atheneu/capas/2682.jpg"
+      "image": "https://s3.amazonaws.com/assets.dotlib.com/public/images/051594e0a55d8cce0e666c3363806989.png",
+      "categoryId": 13
     },
     {
       "id": 2,
       "title": "MANUAL DE CONDUTAS EM CLÍNICA MÉDICA BASEADAS EM EVIDÊNCIAS",
       "editor": "Atheneu",
       "year": "2017",
-      "image": "http://lectio.com.br/upload/1/atheneu/capas/2731.jpg"
+      "image": "https://s3.amazonaws.com/assets.dotlib.com/public/images/b6e109211beca62954634dc4ef3cd21a.png",
+      "categoryId": 13
     },
     {
       "id": 3,
       "title": "EMERGÊNCIAS MÉDICAS",
       "editor": "Atheneu",
       "year": "2017",
-      "image": "http://lectio.com.br/upload/1/atheneu/capas/2744.jpg"
+      "image": "https://s3.amazonaws.com/assets.dotlib.com/public/images/eadc4227ddc85cf4ba0ea866bc5648b5.png",
+      "categoryId": 11
     },
     {
       "id": 4,
       "title": "TRATADO DE NEUROLOGIA INFANTIL",
       "editor": "Atheneu",
       "year": "2017",
-      "image": "http://lectio.com.br/upload/1/atheneu/capas/2754.jpg"
+      "image": "https://s3.amazonaws.com/assets.dotlib.com/public/images/0982da071512943b555adb77e3621764.png",
+      "categoryId": 11
     },
     {
       "id": 5,
       "title": "AVALIAÇÃO E PROGRAMAÇÃO DOS MARCAPASSOS SJM",
       "editor": "Atheneu",
       "year": "2017",
-      "image": "http://lectio.com.br/upload/1/atheneu/capas/2758.jpg"
+      "image": "https://s3.amazonaws.com/assets.dotlib.com/public/images/f9055ce7f1e48558646ae1e3f77ffa63.png",
+      "categoryId": 12
     },
     {
       "id": 6,
       "title": "VENTILAÇÃO NÃO-INVASIVA EM NEONATOLOGIA E PEDIATRIA",
       "editor": "Atheneu",
       "year": "2016",
-      "image": "http://lectio.com.br/upload/1/atheneu/capas/2306.jpg"
+      "image": "https://s3.amazonaws.com/assets.dotlib.com/public/images/e6c22c2f3c20a30e467b07129ec30442.png",
+      "categoryId": 12
     },
     {
       "id": 7,
       "title": "HISTÓRIA DOS ESPORTES",
       "editor": "Senac-SP",
       "year": "2016",
-      "image": "http://lectio.com.br/upload/1/senac/capas/667.jpg"
+      "image": "https://s3.amazonaws.com/assets.dotlib.com/public/images/014c47ec0ebe71fd74fac6b201b5ee92.png",
+      "categoryId": 13
     },
     {
       "id": 8,
       "title": "NA SALA DE ROTEIRISTAS",
       "editor": "Zahar",
       "year": "2016",
-      "image": "http://lectio.com.br/upload/1/zahar/capas/2323.jpg"
+      "image": "https://s3.amazonaws.com/assets.dotlib.com/public/images/82bc4824d04b8789b5a7df14d3fb16d8.png",
+      "categoryId": 11
     },
     {
       "id": 9,
       "title": "O LADRÃO DE CASACA",
       "editor": "Zahar",
       "year": "2016",
-      "image": "http://lectio.com.br/upload/1/zahar/capas/2330.jpg"
+      "image": "https://s3.amazonaws.com/assets.dotlib.com/public/images/82bc4824d04b8789b5a7df14d3fb16d8.png",
+      "categoryId": 18
     },
     {
       "id": 10,
       "title": "HISTÓRIAS DE SHERLOCK HOLMES",
       "editor": "Zahar",
       "year": "2016",
-      "image": "http://lectio.com.br/upload/1/zahar/capas/2332.jpg"
+      "image": "https://s3.amazonaws.com/assets.dotlib.com/public/images/f8b55af67319860ed6cf4f60aa50f4a7.png",
+      "categoryId": 18
     }
   ],
   "categories": [
     {
-      "id": 11,
+      "id": 13,
       "title": "Ciências Agrárias"
     },
     {
@@ -81,7 +91,7 @@
       "title": "Ciências Biológicas"
     },
     {
-      "id": 13,
+      "id": 11,
       "title": "Ciências da Saúde"
     },
     {
