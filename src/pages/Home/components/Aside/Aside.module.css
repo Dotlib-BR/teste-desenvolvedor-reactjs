@@ -1,0 +1,24 @@
+.categoriesPainel {
+    h2 {
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+    }
+
+    .categoriesList {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label {
+        margin-top: 1rem;
+        font-size: 0.758rem;
+        display: flex;
+        gap: 1ch;
+        align-items: center;
+
+        span {
+            text-transform: uppercase;
+        }
+    }
+}

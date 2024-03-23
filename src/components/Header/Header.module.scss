@@ -1,4 +1,7 @@
 .header {
+    border: 1px solid var(--gray3);
+    box-shadow: var(--shadow);
+
     .container {
         width: var(--page-width);
         margin-inline: auto;
@@ -14,7 +17,7 @@
         ul {
             list-style: none;
             display: flex;
-            gap: 1rem;
+            gap: 1.25rem;
         }
     }
 }

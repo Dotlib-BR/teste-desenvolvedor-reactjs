@@ -1,0 +1,22 @@
+.container {
+    width: var(--page-width);
+    margin-inline: auto;
+    padding-block: 1rem;
+    display: flex;
+    gap: 3rem;
+
+    main {
+        flex-grow: 1;
+    }
+
+    hr {
+        border: 1px solid var(--gray3);
+    }
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-block: 1.5rem;
+}
