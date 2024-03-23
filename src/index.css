@@ -1,0 +1,14 @@
+@import url('https://renan-santos.netlify.app/styles/reset.css');
+
+:root {
+    --color-primary: hsl(76, 46%, 52%);
+    --color-primary-darker: hsl(76, 46%, 42%);
+    --gray1: #ececec;
+    --gray2: #dedede;
+    --gray3: #cdcdcd;
+    --page-width: 1200px;
+}
+
+*{
+    font-family: Arial, Helvetica, Sans, sans-serif;
+}

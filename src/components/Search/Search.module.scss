@@ -1,0 +1,19 @@
+.search {
+    --size: 36px;
+    height: var(--size);
+    display: flex;
+
+    input {
+        width: 250px;
+        padding: .25rem;
+        border: 2px solid var(--gray3);
+        border-bottom-width: 4px;
+    }
+
+    button {
+        background-color: var(--color-primary);
+        width: var(--size);
+        border-bottom: 4px solid var(--color-primary-darker);
+        color: white;
+    }
+}

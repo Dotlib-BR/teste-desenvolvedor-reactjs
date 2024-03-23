@@ -1,0 +1,22 @@
+.footer {
+    background-color: var(--gray1);
+    border-top: 1px solid var(--gray2);
+    height: 100px;
+
+    .container {
+        width: var(--page-width);
+        margin-inline: auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        P {
+            padding: 1rem;
+        }
+
+        img {
+            width: 150px;
+        }
+    }
+}
