@@ -1,0 +1,23 @@
+.header {
+    border: 1px solid var(--gray3);
+    box-shadow: var(--shadow);
+
+    .container {
+        width: var(--page-width);
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        img {
+            width: 150px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 1.25rem;
+        }
+    }
+}

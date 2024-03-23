@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 150px;
+    text-align: center;
+    font-size: .75rem;
+    
+    .cover {
+        padding: 2px;
+        border: 2px solid var(--gray2);
+        box-shadow: var(--shadow);
+    }
+
+    .title {
+        line-height: 1.15;
+    }
+
+    .editor {
+        font-weight: bold;
+    }
+}
